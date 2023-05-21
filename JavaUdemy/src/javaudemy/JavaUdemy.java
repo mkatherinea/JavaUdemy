@@ -56,9 +56,44 @@ public class JavaUdemy {
                 System.out.println("Sobresaliente");
                 
             default: System.out.println("Ingrese una nota entre 1 y 10");
+                
 
         }
                 
-    }
     
+    int num1 = 50, num2 = 3, suma= 0;
+    int mayor, menor;
+                
+    if (num1 >num2){
+     mayor = num1;
+      menor = num2;
+    } else {
+    mayor = num2;
+        menor = num1;
+    }    
+    
+    for (int i = menor; i <=mayor; i++){
+            if (i%2==0){
+             suma= suma +i;
+                System.out.println(i);
+     }
+}
+      System.out.println("La suma de los numeros pares entre "+menor+ " y "+mayor+" es: "+suma);
+      
+      int n = 7;
+      boolean primo = true;
+      for(int i = 2; i<n; i++){
+          if(n%2==0){
+              primo = false;
+          }
+      }
+      
+       if(primo== true){
+           System.out.println("El numero "+n+" es primo"); 
+          }else{
+           System.out.println("El numero "+n+" no es primo");              
+          }
+    
+      
+}
 }
